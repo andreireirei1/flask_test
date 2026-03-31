@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from markupsafe import escape
@@ -59,3 +60,15 @@ def delete(idNum):
     return redirect(url_for('index'))
     return render_template('update.html', item=item)
     
+=======
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello Flask!"
+
+if __name__ == "__main__":
+    app.run(debug=True)
+>>>>>>> 5b0e43ed25d1ee10eeb7a76ae2b9044679196f85
